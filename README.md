@@ -37,7 +37,7 @@ Solusi yang dapat dilakukan untuk memenuhi tujuan dari proyek ini diantaranya :
 
 # Data Understanding
 ---
-![kaggle](https://postimg.cc/WDqZg70p)
+![kaggle](https://github.com/aisyalfawwaz/Movie-Serial-Recomendation-Using-Cosines-Similiarity/blob/main/imdb.png?raw=true)
 Data pada project ini didapatkan dari kaggle, data disintesis dari IMDB adalah situs web populer untuk menilai peringkat film dan sibena. berisi sekitar 7000 film dan sinema paling populer di IMDB dengan adanya data Ideal untuk Analisis Data Eksplorasi.
 Informasi dataset dapat dilihat pada tabel dibawah ini :
 Jenis | Keterangan
@@ -88,7 +88,8 @@ Pada proses vektorisasi ini, digunakan metode sebagai berikut.
 # Modeling
 ---
 Setelah dilakukan pra-pemrosesan pada dataset, langkah selanjutnya adalah *modeling* terhadap data. Pada tahap ini Model machine learning yang digunakan pada sistem rekomendasi ini adalah model _content-based filtering_ dengan mengukur  _Cosine Similarity_.. 
-Model _content-based filtering_ ini bekerja dengan Pendekatan ini digunakan untuk metode yang akan mengambil informasi yang berguna dari item yang telah diekstraksi. Informasi ini harus dipastikan merupakan informasi yang baik dan dapat dipastikan akan menjadi relevan terhadap pengguna. Proses ektraksi terhadap item yang digunakan akan memperbesar kemungkinan munculnya item baru yang belum pernah terlihat sebelumnya. Pada dasarnya metode ini sangat bergantung pada perilaku pengguna. Asumsi utama di bawah pendekatan berbasis konten adalah bahwa item atau dokumen dapat diidentifikasi oleh serangkaian fitur yang diekstraksi langsung dari konten mereka sesuai dengan derajat kemiripan tiap fitur
+
+Model _content-based filtering_  adalah  metode yang bekerja dengan cara  mengambil informasi yang berguna dari item yang telah diekstraksi. Informasi ini harus dipastikan merupakan informasi yang baik dan dapat dipastikan akan menjadi relevan terhadap pengguna. Proses ektraksi terhadap item yang digunakan akan memperbesar kemungkinan munculnya item baru yang belum pernah terlihat sebelumnya. Pada dasarnya metode ini sangat bergantung pada perilaku pengguna. Asumsi utama di bawah pendekatan berbasis konten adalah bahwa item atau dokumen dapat diidentifikasi oleh serangkaian fitur yang diekstraksi langsung dari konten mereka sesuai dengan derajat kemiripan tiap fitur
 
 _Cosine Similarity_ adalah teknik pengukuran kesamaan yang bekerja dengan mengukur kesamaan dua vektor dan menentukan apakah kedua vektor menunjuk ke arah yang sama dengan menghitung sudut kosinus antara kedua vektor. Semakin kecil sudut cosinus, semakin besar _cosine similarity_.
 Fungsi *cosine similarity* berfungsi dengan perhitungan yang sering digunakan untuk menghitung kesamaan antar objek. Secara umum, fungsi kesamaan adalah fungsi yang mengambil dua objek dalam bilangan real (0 dan 1) dan mengembalikan nilai kesamaan antara dua objek dalam bilangan real. Kesamaan kosinus adalah salah satu metode pengukuran kesamaan yang paling populer. Metode ini digunakan untuk menghitung kosinus sudut antara dua vektor dan biasanya digunakan untuk mengukur kesamaan antara dua teks/dokumen. Fungsi kesamaan kosinus antara titik A dan titik B direpresentasikan sebagai berikut:
@@ -113,7 +114,9 @@ Berikut _top_-5 _recommemdation_ berdasarkan genre dari judul film "*King Kong*"
 judul | genre
 ---|---
 Kingkong | Action, Adventure, Drama
-![img](https://postimg.cc/Q9vmVcf5)
+
+![img](https://github.com/aisyalfawwaz/Movie-Serial-Recomendation-Using-Cosines-Similiarity/blob/main/hasil.png?raw=true)
+
 Dengan hasil yang diberikan di atas berdasarkan judul film "King Kong" dengan genre Action, Adventur, Drama maka didapatkan 5 rekomendasi judul film dengan genre yang memiliki kemiripan.
 
 # Evaluation
