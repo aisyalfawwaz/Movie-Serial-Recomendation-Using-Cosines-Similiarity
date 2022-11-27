@@ -114,6 +114,11 @@ Berikut _top_-5 _recommemdation_ berdasarkan genre dari judul film "*King Kong*"
 judul | genre
 ---|---
 Kingkong | Action, Adventure, Drama
+Dune     | Action, Adventure, Drama
+House of the Dragon  | Action, Adventure, Drama
+Game of Thrones   | Action, Adventure, Drama
+Y. The Last Man | Action, Adventure, Drama
+Eternals | Action, Adventure, Drama
 
 ![img](https://github.com/aisyalfawwaz/Movie-Serial-Recomendation-Using-Cosines-Similiarity/blob/main/hasil.png?raw=true)
 
